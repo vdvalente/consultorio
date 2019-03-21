@@ -12,18 +12,12 @@ urlpatterns = [
 
    
 
-    #/lenguajes, lenguajes/c-->   <str:lenguaje>  
-   # path("lenguajes/", views.lenguajes_main, name="inicio_lenguajes" ),
-   # path("lenguajes/<str:lenguaje>/", views.lenguajes_detail, name="lenguajes_det"),
+    #/login  
+    path("login/", views.init_sesion, name="login" ),
 
- 										#EJEMPLOS: 
- 				#/librerias, librerias/c/ ---> librerias/<str:lenguaje>/
- 			#librerias/c/sdl --> librerias/<str:lenguaje>/<str:libreria>/
+   #/registro
+    path("registro/",views.registro, name="registro" ),
    
-   # path("librerias/",views.librerias_main, name="librerias" ),
-   # path("librerias/<str:lenguaje>/", views.librerias_overview, name="librerias_over" ),
-    #path("librerias/<str:lenguaje>/<str:libreria>/",views.librerias_detail, name="librerias_det" ),
-
 
     #/frameworks, frameworks/c/allegro -->   <str:lenguaje>/<str:framework>
     #path("frameworks/",views.frameworks_main, name="frameworks" ), 
@@ -34,6 +28,6 @@ urlpatterns = [
 
 ]
 
-#if settings.DEBUG:
- #   urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
-  #  urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+    #urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

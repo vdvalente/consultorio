@@ -10,5 +10,25 @@ from urllib import parse
 #----------------------------------------------------------------
 
 def index (request):
-	context={}
+	context = {}
 	return render(request,"index.html")
+
+
+#----------------------------------------------------------------
+					#Inicio de sesión y registro
+#----------------------------------------------------------------
+
+def init_sesion (request):
+	context = {}
+	return render (request, "initsesion.html")
+
+
+def registro (request):
+	context = {}
+	return (request, "registro.html")
+
+
+
+#----------------------------------------------------------------
+					#Inicio de sesión y registro
+#----------------------------------------------------------------
