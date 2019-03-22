@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app_rcs.apps.AppRcsConfig',
+    'sass_processor.apps.SassProcessorConfig',
+    #'sass_processor',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +121,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
+]
+
+
+# Django Sass
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'/app_rcs/static/css')

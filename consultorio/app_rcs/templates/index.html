@@ -2,17 +2,18 @@
 <html>
 {% load static %}
 
-
+{% load sass_tags %}
 
 
 
 <head>
 	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="{% sass_src 'scss/m.scss' %}">
 </head>
 
 
 <body>
-	<section>
+	<section class=" container-fluid ">
 		<header> 
 			<input type="button" name="inits" value="Iniciar Sesión">
 			<nav>  
@@ -35,27 +36,6 @@
 
 
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style type="text/css">
-	
-	li { 
-  padding: 5px;
-  border-style: solid;
-  max-width: 100px;
-  display: inline-grid;}
-</style>
 
 
 
