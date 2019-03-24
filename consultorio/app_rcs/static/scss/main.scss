@@ -1,5 +1,5 @@
 
-$button-color:#6687c6;
+$button-color:#0062cc;
 
 @mixin font ($size, $weight, $family)
 {
@@ -99,8 +99,7 @@ body
           li:hover
           {
           //background: fade-out($button-color, 0.9);
-          padding-right: 30px;
-          padding-left: 15px;
+          width:205px;
           border-radius: 5%;
           box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
           
@@ -136,7 +135,7 @@ body
 
       input[type="button" i]:hover
       {
-          
+        width:305px;
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         border-radius: 5%; 
         padding-left: 15px;

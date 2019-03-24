@@ -104,4 +104,82 @@ body {
     text-align: center;
     display: block; }
 
-/*# sourceMappingURL=main.css.map */
+body {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Lucida Sans Unicode";
+  color: black; }
+  body .logo {
+    display: block;
+    text-align: center;
+    transform: translateY(25px); }
+    body .logo img {
+      width: 150px;
+      height: 150px;
+      border-radius: 3%;
+      border: solid; }
+    body .logo p {
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto; }
+  body .data {
+    margin: 40px;
+    margin-bottom: 20px; }
+    body .data input {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: "Lucida Sans Unicode ";
+      width: 300px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: .25rem;
+      border: 1px solid #ced4da;
+      background-color: #fff;
+      background-clip: padding-box;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      position: relative;
+      box-sizing: border-box;
+      height: auto;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0; }
+  body .final, body a {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Helvetica";
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #0062cc;
+    text-decoration: none;
+    margin: 4px; }
+    body .final input[type="submit" i], body a input[type="submit" i] {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: "Helvetica";
+      color: white;
+      display: block;
+      text-align: center;
+      background: #0062cc;
+      border-color: #0062cc;
+      width: 300px;
+      max-width: 330px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-radius: 3%;
+      margin-top: 20px;
+      margin-right: auto;
+      margin-left: auto; }
+    body .final input[type="submit" i]:hover, body a input[type="submit" i]:hover {
+      width: 305px;
+      box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 5%;
+      padding-left: 15px;
+      background: #0062cc; }
+
+/*# sourceMappingURL=login.css.map */

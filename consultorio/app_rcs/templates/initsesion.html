@@ -7,36 +7,30 @@
 <head>
 	<title> Iniciar Sesión </title>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="{% sass_src 'scss/main.scss' %}" /> 
+	<link rel="stylesheet" href="{% sass_src 'scss/login.scss' %}" /> 
 </head>
 
 <body>
 
-<header> 
-	<nav> 
-		 <ul> Shit ton of gold</ul>
-		 <li> Shit</li>
- 	</nav>  
-</header>
-<section>
-	<img src="">
+<section class ="logo">
+	<img src="{% static 'scss/lg.png' %}">
+	<p> Datos de Usuario</p>
 </section>
 
-
-
-<section>
-	<input type="text" name="user" placeholder="Usuario"  >
-	<input type="password" name="pass" placeholder="Contraseña">
+<div class="h"></div>
+<section class ="data">
+	<input type="text" name="user" placeholder="Email"  autofocus>
+	<input type="password" name="pass" placeholder="Contraseña" required >
 </section>
 
 
 
 
-<nav>
+<section class="final">
 	<a href=""> Registrarse </a>
-	<br>
-	<a href=""> Olvidó su contraseña </a>
-</nav>
+	<a href=""> ¿Olvidó su contraseña? </a>
+	<input type="submit" name="submit-i" value="Iniciar Sesión">
+</section>
 
 
 
