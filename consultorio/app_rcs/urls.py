@@ -10,7 +10,6 @@ urlpatterns = [
     path("", views.index, name="index_"), 
     path("index/", views.index, name="index"),
 
-   
 
     #/login  
     path("login/", views.init_sesion, name="login" ),

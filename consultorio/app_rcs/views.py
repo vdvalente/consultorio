@@ -11,7 +11,7 @@ from urllib import parse
 
 def index (request):
 	context = {}
-	return render(request,"index.html")
+	return render (request,"index.html")
 
 
 #----------------------------------------------------------------
@@ -25,10 +25,11 @@ def init_sesion (request):
 
 def registro (request):
 	context = {}
-	return (request, "registro.html")
+	return render (request, "registro.html")
 
 
 
 #----------------------------------------------------------------
-					#Inicio de sesión y registro
+					#Panel Dra.
 #----------------------------------------------------------------
+

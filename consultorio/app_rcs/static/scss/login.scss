@@ -1,11 +1,10 @@
 @import "main.scss";
 
 
-body{
+.init{
 
 	@include font(20px, bold, "Lucida Sans Unicode");
 	color: black;
-
 
 	.logo
 	{	
@@ -26,7 +25,7 @@ body{
 		{
 			width:300px;
 			margin-right: auto;
-    		margin-left:auto;
+    	margin-left:auto;
 		}
 
 	}
@@ -35,28 +34,28 @@ body{
 	.data
 	{	margin:40px;
 		margin-bottom:20px; 
-
+		
 		input
 		{	
-			@include font(16px, bold, "Lucida Sans Unicode ");
+		  @include font(16px, normal, "Arial");
+			color: black;
 			width:300px;
+			height: auto;
 			display: block;
 			margin-right: auto;
-    		margin-left:auto;
-    		border-radius: .25rem;
-    		border: 1px solid #ced4da;
-    		background-color: #fff;
-    		background-clip: padding-box;
-    		font-weight: 400;
-    		line-height: 1.5;
-    		color: #495057;
-    		position: relative;
-    		box-sizing: border-box;
-    		height: auto;
-    		padding: 10px;
-    		margin-bottom: 10px;
-    		border-top-left-radius: 0;
-    		border-top-right-radius: 0;
+    	margin-left:auto;
+    	border-radius: .25rem;
+    	border: 1px solid #ced4da;
+    	background-color: #fff;
+    	background-clip: padding-box;
+    	line-height: 1.5;
+    	color: #495057;
+    	position: relative;
+    	box-sizing: border-box;
+    	padding: 10px;
+    	margin-bottom: 10px;
+    	border-top-left-radius: 0;
+    	border-top-right-radius: 0;
 		}	
 	}
 
@@ -104,4 +103,3 @@ body{
 	}
 
 }
-

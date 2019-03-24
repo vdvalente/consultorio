@@ -1,0 +1,36 @@
+@mixin font ($size, $weight, $family)
+{
+  font: 
+  {
+    size: $size;
+    weight: $weight;
+    family: $family;
+  }
+}
+
+
+input 
+{
+	@include font(16px, normal, "Arial");
+	color: black;
+	width:300px;
+	height: auto;
+	display: block;
+	margin-right: auto;
+    margin-left:auto;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    background-clip: padding-box;
+    line-height: 1.5;
+   	color: #495057;
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+
+
+}
