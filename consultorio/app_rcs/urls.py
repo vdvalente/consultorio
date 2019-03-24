@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     #/, /inicio
     path("", views.index, name="index_"), 
-    path("inicio/", views.index, name="index"),
+    path("index/", views.index, name="index"),
 
    
 
