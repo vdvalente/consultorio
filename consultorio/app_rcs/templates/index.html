@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html>
-{% load static %}
 
+{% load static %}
 {% load sass_tags %}
 
 
 
 <head>
 	<title>Inicio</title>
-	<link rel="stylesheet" type="text/css" href="{% sass_src 'scss/m.scss' %}">
+	<link rel="stylesheet" type="text/css" href="{% sass_src 'scss/main.scss' %}">
+
 </head>
 
 
 <body>
-	<section class=" container-fluid ">
-		<header> 
-			<input type="button" name="inits" value="Iniciar Sesión">
-			<nav>  
-				<ul> 
-					<li> Inicio </li>
-					<li> Consultas </li>
-					<li> Acerca de </li>
-					<li> Registrarse </li>
 
+	<section class="sect-main">
+		<img src="{% static 'scss/img-header.jpg' %}">
+		<header> 
+			<nav class = "nav-main">  
+				<ul> 
+					<a href=""><li> Inicio </li></a>
+					<a href=""><li> Consultas </li></a>
+					<a href=""><li> Acerca de </li></a>
+					<a href=""><li> Especialidades </li></a>
 				</ul>
 			</nav>
 		</header>
+		
 	</section>
 
+	<div class="horizontal"></div>
+
+	<section class = "init-session">
+		<!-- Imagenes pricipales y other shit  -->
+		<p>
+			<div class="lorem"> 
+				Lorem ipsum Dra. Tatiana Maure 
+			</div> 
+
+			<div class="loremjt"> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu diam leo. In at aliquam orci, eu imperdiet felis. Aenean sodales orci arcu, non blandit purus luctus non. Donec massa risus, aliquam a neque quis, blandit fermentum enim. Curabitur efficitur molestie tellus at pharetra. Nam quis nisi at erat faucibus scelerisque. Praesent pulvinar non augue non elementum.
+			</div>
+		</p>
+		<input type="button"  value="Registrarse">
+		<input type="button"  value="Iniciar Sesión">
+
+	</section>
+
+	<div class="horizontal"></div>
+
+	<footer>  
+		<div class="horizontal"></div>
+		<p> 
+			Footer shit  
+
+		</p>
 
 
-<section>
-	<!-- Imagenes pricipales y other shit  -->
-
-
-
-</section>
-
-
-
-
-<footer>  Footer shit  </footer>
-
+	</footer>
 
 
 </body>
-
 </html>

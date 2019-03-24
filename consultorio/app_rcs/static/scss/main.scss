@@ -1,0 +1,190 @@
+$color1 : #acfcff ;
+$c2: 1;
+$orange: #ffa500;
+$back-color1: #2dc9ca;
+$back-color2: #284cd2;
+$button-color: #007bff;
+$p: fade-in($orange, 1);
+$div-background: #2e3338;
+
+@mixin font ($size, $family)
+{
+  font: 
+  {
+    size: $size;
+    family: $family;
+  }
+}
+
+  
+
+body 
+{
+  color:white;
+  background: #4286f4;
+  border-color: $div-background;
+  border-style:solid;
+  border-top-width:0px;
+  border-right-width:0px;
+  border-bottom-width:0px;
+  border-left-width:50px;
+
+
+
+  //background: $back-color1; 
+  //background: -webkit-linear-gradient(left, $back-color1, $back-color2);
+  //background: -moz-linear-gradient(left, $back-color1, $back-color2); 
+  //background: -ms-linear-gradient(left, $back-color1, $back-color2); 
+  //background: -o-linear-gradient(left, $back-color1, $back-color2); 
+  //background: linear-gradient(to right, $back-color1, $back-color2);
+  @include font(18px, "Lucida Sans Unicode");
+
+  .horizontal
+  {
+    width: 98%;
+    //width:100px;
+    height: 80px;
+    //background: $back-color2 ;
+    //background: #2E3338;
+    //margin-right:50px;
+    //padding-right:50px;
+    margin-left: 20px;
+    //padding-right:10px;
+    padding-left:0;
+  }
+
+
+  .sect-main
+  {
+    width: 70%;
+    //background-color: $p;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 40px;
+
+    img
+    {   
+      width: 850px;
+      max-width: 1000px;
+      min-width: 300px;
+      height: 300px;
+      max-height:350px;
+      min-height: 150; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: none;
+      border-radius: 3%;
+      //border-color: #2dc9ca ;
+    }
+
+    .nav-main 
+    {
+
+      ul
+      {
+        text-align: center;
+        padding-right: 15px;
+        padding-inline-start: 0px;
+
+        li
+          {
+          //border-style: dotted;
+          color:white;
+          width: 150px;
+          height:25px;
+          list-style: none;
+          display: inline-block;
+          background:  $div-background;
+          border-radius: 3%;
+          border-color: $button-color;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          margin-right: 25px;
+          margin-left: 25px;
+
+          } 
+
+          li:hover
+          {
+          background: fade-out($button-color, 0.9);
+          padding-right: 30px;
+          border-radius: 5%;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+          margin-right: 0px;
+          margin-left: 15px;
+          padding-left: 35px;
+
+          }   
+      }
+
+    }
+  }
+
+
+  .init-session
+  {
+    display: block;
+    text-align: center;
+
+      input[type="button" i]
+      {
+        font-size: 1.25rem;
+        font-family: "Lucida Sans Unicode";
+        color:white;
+        width: 300px;
+        max-width: 330px;
+        padding: 15px;
+        border-radius: .3rem;
+        background: $button-color;
+        border-color: $button-color;
+        margin: 20px;
+      }
+
+
+      input[type="button" i]:hover
+      {
+          
+        background: fade-out($button-color, 0.9);
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        padding-left: 40px;
+
+      }
+
+      .lorem
+      {
+        display: block;
+        width:500px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+
+
+      }
+
+      .loremjt
+        {
+          text-align: justify;
+          display: block;
+          width:500px;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 20px;
+        }
+
+
+  }
+
+
+  footer
+  {
+
+  text-align: center;
+  display: block;
+  }
+  
+
+}
+
+//Hacer el primer div horizontal y luego se prueba con los demás verticales
+// line-height ==> Para acomodar la posicion vertical del texto
