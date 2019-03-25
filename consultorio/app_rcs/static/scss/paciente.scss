@@ -1,0 +1,104 @@
+$button-color: #0062cc;
+@mixin font ($size, $weight, $family)
+{
+  font: 
+  {
+    size: $size;
+    weight: $weight;
+    family: $family;
+  }
+}
+
+@mixin side-border()
+{
+	border-right:solid;
+    border-left:solid;
+}
+
+
+.paciente
+{
+	@include font(20px, bold, "Lucida Sans Unicode" );
+	width:400px;
+	display: inline-block;
+	text-align: center;
+	margin-left: 20px;
+	//margin-top:20px;
+	padding:10px;
+	//border-top:solid;
+	//border-left:solid;
+	//border-right:solid;
+
+	img
+	{
+		display: block;
+		height: 100px;
+		width:100px;
+		margin-right: auto;
+		margin-left: auto;	
+	}
+}
+
+.menu
+{
+	@include font(18px, bold, "Arial");
+	width: 700px;
+	display: inline-block;
+	margin-left: 500px;
+	margin-top: -50px;
+	transform: translateY(-120px);
+
+	ul
+	{	width: 100%;
+		text-align: center;
+		padding-inline-start: 0px;
+
+		a{
+			text-decoration: none;
+		}
+
+        li
+        {	
+        	height: 25px;
+        	width: 180px;
+        	color: white;
+        	background:  $button-color;
+        	border-color: $button-color;
+        	border-radius: 3%;
+			display: inline-block;
+			list-style: none;
+			padding-top:15px;
+			padding-bottom:15px;
+			margin-right:10px;
+			margin-left:10px;
+        }
+	}
+}
+
+.info
+{
+	@include font(16px, normal, "Lucida Sans Unicode");
+	width:400px;
+    text-align: justify;
+    display: inline-block;
+    //margin-right: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding:10px;
+ 	//@include side-border();
+    //border-bottom:solid;
+
+}
+
+/*
+    .box
+    {
+    	height: 30px;
+    	width:400px;
+    	@include side-border();
+    	margin-left: 20px;
+    	padding-left:20px;
+    	margin-top: -25px; 
+    }
+
+*/

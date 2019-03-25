@@ -1,0 +1,111 @@
+
+$button-color:#0062cc;
+
+@mixin font ($size, $weight, $family)
+{
+  font: 
+  {
+    size: $size;
+    weight: $weight;
+    family: $family;
+  }
+}
+
+@mixin b-style()
+{
+  color: black;
+  width:100px;
+  height: 22px;
+  display: block;
+  margin-right: auto;
+  margin-left:auto;
+  border-radius: .25rem;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  background-clip: padding-box;
+  line-height: 1.5;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+table {
+  @include font (14px, normal, "Arial");
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child() {
+  background-color: #ffffff;
+}
+
+button
+{
+	@include font(14px,bold,"Helvetica");
+	@include b-style();
+	background-color:$button-color;
+	border-color:$button-color;
+}
+
+#srch
+{
+	display: inline-block;
+}
+
+
+.dra
+{	@include font(18px,bold,"Helvetica");
+	width: 400px;
+	display: inline-block;
+    margin-right: 0px;
+    margin-left: 180px;
+    margin-top: 20px;
+    
+    img
+    {
+   	height: 100px;
+    width: 100px;
+    }
+}
+
+
+.buscar
+{	
+	height:60px;
+	width:400px;
+	margin-top: -50px;
+	display: block;
+	padding-top:15px;
+
+	transform: translateX(915px);
+	input
+	{
+		@include font(14px,bold, "Lucida Sans Unicode");
+		width: 150px;
+
+	}
+}
+
+
+.data
+{
+	width:1000px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+
+
+
+}

@@ -33,3 +33,28 @@ def registro (request):
 					#Panel Dra.
 #----------------------------------------------------------------
 
+def dra (request):
+	lista = "bitch"
+	context = {"lista": lista}
+	return render (request, "init_doctora.html")
+
+
+
+#----------------------------------------------------------------
+					#Panel Paciente.
+#----------------------------------------------------------------
+
+def paciente (request):
+	context = {}
+	return render (request, "init_paciente.html")
+
+
+def paciente_solicitar (request):
+	context = {}
+	return render (request, "solicitar_cita.html")
+
+
+
+def perfil (request):
+	context = {}
+	return render (request, "perfil.html")

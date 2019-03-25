@@ -1,3 +1,5 @@
+
+$button-color: #0062cc;
 @mixin font ($size, $weight, $family)
 {
   font: 
@@ -9,28 +11,75 @@
 }
 
 
-input 
-{
-	@include font(16px, normal, "Arial");
-	color: black;
-	width:300px;
-	height: auto;
+
+section
+{	
 	display: block;
 	margin-right: auto;
-    margin-left:auto;
-    border-radius: .25rem;
-    border: 1px solid #ced4da;
-    background-color: #fff;
-    background-clip: padding-box;
-    line-height: 1.5;
-   	color: #495057;
-    position: relative;
-    box-sizing: border-box;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+	margin-left:auto;
+	transform: translateY(60px);
+
+	p
+	{
+	@include font(20px, bold, "Arial");
+	width:300px;
+	margin-right: auto;
+	margin-left:auto;
+	display: block;
+	text-align: center;
+	}
+
+	input 
+	{
+		@include font(16px, normal, "Arial");
+		color: black;
+		width:300px;
+		height: auto;
+		display: block;
+		margin-right: auto;
+	    margin-left:auto;
+	    border-radius: .25rem;
+	    border: 1px solid #ced4da;
+	    background-color: #fff;
+	    background-clip: padding-box;
+	    line-height: 1.5;
+	   	color: #495057;
+	    position: relative;
+	    box-sizing: border-box;
+	    padding: 10px;
+	    margin-bottom: 10px;
+	    border-top-left-radius: 0;
+	    border-top-right-radius: 0;
 
 
+	}
+
+	input[type="submit" i]
+      	{
+      		@include font(18px, bold, "Helvetica");
+        	color:white;
+        	display: block;
+   			text-align: center;
+        	background: $button-color;
+        	border-color: $button-color ;
+        	width: 300px;
+        	max-width: 330px;
+        	padding-top: 15px;
+        	padding-bottom: 15px;
+       	 	border-radius: 3%;
+       	 	margin-top: 20px;
+       	 	margin-right: auto;
+    		margin-left:auto;   
+      	}
+
+
+	input[type="submit" i]:hover
+    {
+    	width: 305px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 5%; 
+        padding-left: 15px;
+        background: fade-in($button-color, 1 );
+    }
 
 }

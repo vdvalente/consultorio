@@ -14,16 +14,21 @@ urlpatterns = [
     #/login  
     path("login/", views.init_sesion, name="login" ),
 
-   #/registro
+   #/registro y perfil
     path("registro/",views.registro, name="registro" ),
+    path("perfil/",views.perfil, name="perfil" ),
+
+
+ #Acomodar las vistas luego, de forma que se envie y reciba la info correspondiente# --> @If => user.type:(p1||p2)
+    #/usuarios
+    path("paciente/",views.paciente, name="paciente" ),
+    path("paciente/solicitar-cita",views.paciente_solicitar, name="paciente_"),
+    path("dra/",views.dra, name="dra" ),
+
+   
    
 
-    #/frameworks, frameworks/c/allegro -->   <str:lenguaje>/<str:framework>
-    #path("frameworks/",views.frameworks_main, name="frameworks" ), 
-    #path("frameworks/<str:lenguaje>/",views.frameworks_overview, name="frameworks_over"),
-    #path("frameworks/<str:lenguaje>/<str:framework>/",views.framework_detail, name="frameworks_det"),
 
-    #path("login", views.login , name="login"), """
 
 ]
 

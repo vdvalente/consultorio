@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+{% load sass_tags %}
+
+<head>
+	<title> Perfil </title>
+	<link rel="stylesheet" type="text/css" href="{%  sass_src  'scss/perfil.scss'%}">
+</head>
+<body>
+	<div class="imgp">
+		<p> Tu Perfil</p>
+		<img src=" {% static 'scss/usr.png' %}" >
+	</div>
+	<section >  
+		<form action="" method="post">
+  			<div class="data">
+    			<input type="text"  name="user_name" placeholder="Nombre" >
+    			<input type="text"  name="user_last-name" placeholder="Apellido">
+    			<input type="email"  name="user_mail" placeholder="Email" >
+    			<input type="text"  name="dir" placeholder="Dirección" >
+    			<input type="text"  name="ci" placeholder="Cedula Identidad" >
+    			<input type="text"  name="tlfn" placeholder="Teléfono" >
+ 
+  			</div>
+		</form>
+		<!--<input type="submit" value=" Crear cuenta"> -->
+	</section>  
+
+</body>
+</html>
