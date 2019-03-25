@@ -64,13 +64,23 @@ section {
   font-family: "Helvetica";
   width: 200px;
   display: block;
-  margin-right: -300px;
   margin-left: 180px;
   margin-top: 20px;
-  transform: translateY(100px); }
+  transform: translateY(50px);
+  text-align: center; }
   .imgp img {
     height: 100px;
-    width: 100px; }
+    width: 100px;
+    margin-right: auto;
+    margin-left: auto; }
+  .imgp a {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Arial";
+    display: block;
+    color: #0062cc;
+    text-decoration: none;
+    margin: 10px; }
 
 section {
   display: block;
@@ -79,6 +89,6 @@ section {
 
 .data {
   display: block;
-  margin-top: -70px; }
+  margin-top: -200px; }
 
 /*# sourceMappingURL=perfil.css.map */

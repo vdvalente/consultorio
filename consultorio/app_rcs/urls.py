@@ -23,10 +23,11 @@ urlpatterns = [
     #/usuarios
     path("paciente/",views.paciente, name="paciente" ),
     path("paciente/solicitar-cita",views.paciente_solicitar, name="paciente_"),
+    
     path("dra/",views.dra, name="dra" ),
 
-   
-   
+    
+
 
 
 

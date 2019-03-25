@@ -5,16 +5,29 @@
 {	@include font(18px,bold,"Helvetica");
 	width: 200px;
 	display: block;
-    margin-right: -300px;
     margin-left: 180px;
     margin-top: 20px;
-    transform: translateY(100px);
-    
+    transform: translateY(50px);
+    text-align: center;
+
     img
     {
    	height: 100px;
     width: 100px;
+    margin-right: auto;
+    margin-left: auto;
     }
+
+    a
+    {
+    	@include font(14px,bold,"Arial");
+    	display: block;
+    	color: $button-color;
+    	text-decoration: none;
+    	margin: 10px;
+    }
+
+
 }
 
 section
@@ -32,6 +45,6 @@ section
 .data
 {
 	display: block;
-	margin-top:-70px;
+	margin-top:-200px;
 
 }

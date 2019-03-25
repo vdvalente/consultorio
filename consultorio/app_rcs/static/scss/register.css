@@ -1,9 +1,9 @@
-.sc_reg {
+section {
   display: block;
   margin-right: auto;
   margin-left: auto;
   transform: translateY(60px); }
-  .sc_reg p {
+  section p {
     font-size: 20px;
     font-weight: bold;
     font-family: "Arial";
@@ -12,7 +12,7 @@
     margin-left: auto;
     display: block;
     text-align: center; }
-  .sc_reg input {
+  section input {
     font-size: 16px;
     font-weight: normal;
     font-family: "Arial";
@@ -34,7 +34,7 @@
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
-  .sc_reg input[type="submit" i] {
+  section input[type="submit" i] {
     font-size: 18px;
     font-weight: bold;
     font-family: "Helvetica";
@@ -51,7 +51,7 @@
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto; }
-  .sc_reg input[type="submit" i]:hover {
+  section input[type="submit" i]:hover {
     width: 305px;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5%;
