@@ -1,0 +1,76 @@
+table {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Arial";
+  border-collapse: collapse;
+  width: 100%; }
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center; }
+
+tr:nth-child() {
+  background-color: #ffffff; }
+
+button {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Helvetica";
+  color: black;
+  width: 100px;
+  height: 22px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: .25rem;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  background-clip: padding-box;
+  line-height: 1.5;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #0062cc;
+  border-color: #0062cc; }
+
+#srch {
+  display: inline-block; }
+
+.dra {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Helvetica";
+  width: 400px;
+  display: inline-block;
+  margin-right: 0px;
+  margin-left: 180px;
+  margin-top: 20px; }
+  .dra img {
+    height: 100px;
+    width: 100px; }
+
+.buscar {
+  height: 60px;
+  width: 400px;
+  margin-top: -50px;
+  display: block;
+  padding-top: 15px;
+  transform: translateX(915px); }
+  .buscar input {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Lucida Sans Unicode";
+    width: 150px; }
+
+.data {
+  width: 1000px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px; }
+
+/*# sourceMappingURL=dra.css.map */

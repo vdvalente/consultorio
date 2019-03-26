@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+{% load sass_tags %}
+
+
+<head>
+	<title>	Pacientes </title>
+	<link rel="stylesheet" type="text/css" href=" {% sass_src  'scss/paciente.scss'%}">
+</head>
+<body>
+	<div id="app">
+	<div class ="paciente">
+		<p>	
+			Hola, Paciente
+		</p>
+		<img src=" {% static 'scss/usr.png' %}">
+	</div>
+
+	<nav class= "menu">
+		<ul>
+			<a @click="show = 'indicaciones'"> <li> Ver Indicaciones </li></a>
+			<a @click="show = 'cita'"> <li> Solicitar Cita </li></a>
+			<a @click="show = 'perfil'"> <li> Editar Perfil </li></a>
+		</ul>
+		<div class="indicaciones" v-show="show == 'indicaciones'">
+			<textarea name="textarea" disabled  rows="10" cols="70" placeholder="Indicaciones"></textarea>
+		</div>
+		<div class="cita" v-show="show == 'cita'">
+			<textarea name="textarea"  rows="10" cols="70" placeholder="Describa su sintoma"></textarea>
+		</div>
+	</nav>
+
+	<div class="box"></div>
+	<section class = "info">
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu diam leo. In at aliquam orci, eu imperdiet felis. Aenean sodales orci arcu, non blandit purus luctus non. Donec massa risus, aliquam a neque quis, blandit fermentum enim. Curabitur efficitur molestie tellus at pharetra. Nam quis nisi at erat faucibus scelerisque. Praesent pulvinar non augue non elementum.
+		</p>
+	</section>
+
+	</div>	
+	<script src="{% static 'vue/vue.min.js' %}"></script>
+	<script src="{% static 'vue/script.js' %}"></script>
+
+</body>
+</html>

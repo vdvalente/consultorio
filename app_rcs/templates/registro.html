@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+{% load sass_tags %}
+
+
+<head>
+	<title> Registro </title>
+	<link rel="stylesheet" type="text/css" href=" {% sass_src  'scss/register.scss'%}">
+</head>
+
+<body>
+
+	<section>   
+		<p> Regístrate! </p>
+		<form action="" method="post">
+  			<div>
+    			<input type="text"  name="user_name" placeholder="Nombre" required>
+    			<input type="text"  name="user_last-name" placeholder="Apellido">
+    			<input type="email"  name="user_mail" placeholder="Email" required>
+    			<input type="email"  name="user_r-mail" placeholder="Repetir Email" required>
+    			<input type="password"  name="user_pass" placeholder="Contraseña" required>
+    			<input type="password"  name="user_r-pass" placeholder="Repetir Contraseña" required>
+    			<input type="date" name="user_name" >
+  			</div>
+		</form>
+		<input type="submit" value=" Crear cuenta">
+	</section>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+@import "main.scss";
+
+
+.init{
+
+	@include font(20px, bold, "Lucida Sans Unicode");
+	color: black;
+
+	.logo
+	{	
+
+    	display: block;
+    	text-align: center;
+    	transform: translateY(25px);
+
+		img
+		{	
+			width: 150px;
+			height: 150px;
+			border-radius: 3%;
+			border:solid;	 
+		}
+
+		p
+		{
+			width:300px;
+			margin-right: auto;
+    	margin-left:auto;
+		}
+
+	}
+
+
+	.data
+	{	margin:40px;
+		margin-bottom:20px; 
+		
+		input
+		{	
+		  @include font(16px, normal, "Arial");
+			color: black;
+			width:300px;
+			height: auto;
+			display: block;
+			margin-right: auto;
+    	margin-left:auto;
+    	border-radius: .25rem;
+    	border: 1px solid #ced4da;
+    	background-color: #fff;
+    	background-clip: padding-box;
+    	line-height: 1.5;
+    	color: #495057;
+    	position: relative;
+    	box-sizing: border-box;
+    	padding: 10px;
+    	margin-bottom: 10px;
+    	border-top-left-radius: 0;
+    	border-top-right-radius: 0;
+		}	
+	}
+
+
+   	.final,a
+   	{	
+   		@include font(14px, bold, "Helvetica");
+   		display: block;
+		  margin-right: auto;
+    	margin-left:auto;
+    	text-align: center;
+    	color: $button-color;
+    	text-decoration: none;
+    	margin:4px;
+
+
+      	input[type="submit" i]
+      	{
+      		@include font(18px, bold, "Helvetica");
+        	color:white;
+        	display: block;
+   			text-align: center;
+        	background: $button-color;
+        	border-color: $button-color ;
+        	width: 300px;
+        	max-width: 330px;
+        	padding-top: 15px;
+        	padding-bottom: 15px;
+       	 	border-radius: 3%;
+       	 	margin-top: 20px;
+       	 	margin-right: auto;
+    		margin-left:auto;   
+      	}
+
+
+		input[type="submit" i]:hover
+      	{
+        width: 305px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 5%; 
+        padding-left: 15px;
+        background: fade-in($button-color, 1 );
+      	}
+
+	}
+
+}
