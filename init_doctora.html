@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+{% load sass_tags %}
+
+<head>
+	<title>Control</title>
+	<link rel="stylesheet" type="text/css" href="{% sass_src 'scss/dra.scss' %}">
+</head>
+
+<body>
+
+	<div class ="dra">
+		<p>	
+			 Hola Doctora!
+		</p>
+		<img src=" {% static 'scss/usr.png' %}">
+	</div>
+
+
+	<div class="buscar">
+		<input type="text" name="ci" placeholder="Buscar paciente">
+		<button type="button" value="search" id="srch"> Buscar </button>
+	</div>
+
+	<div class="data">
+	<table>
+  		<tr>
+    		<th> Nombre </th>
+    		<th> Apellido </th>
+    		<th>Cédula de identidad</th>
+    		<th> Telefono </th>
+    		<th> Dirección </th>
+    		<th> Email </th>
+    		<th> Tratamiento </th>
+    		<th> Agendar Cita </th>
+  		</tr>
+
+    	<tr>
+    		<td>Alfreds </td>
+    		<td>Futterkiste</td>
+    		<td>25.565.234</td>
+    		<td>0412-3345543</td>
+    		<td>El trigal</td>
+    		<td>victor@gmail.com</td>
+    		<td><button value="Ver">"Ver" </button></td>
+    		<td><button value="Agendar"> "Agendar"</td>
+
+  		</tr>
+	</table>
+	</div>
+
+</body>
+
+
+
+
+</html>
+
+<!--https://codepen.io/geoffreyrose/pen/azdJNO-->

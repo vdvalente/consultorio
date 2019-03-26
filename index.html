@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+{% load static %}
+{% load sass_tags %}
+
+
+
+<head>
+	<title>Inicio</title>
+	<link rel="stylesheet" type="text/css" href="{% sass_src 'scss/main.scss' %}">
+
+</head>
+
+
+<body class="index">
+	<div id="app">
+	<section class="sect-main">
+		<div class="horizontal"></div>
+		<img src="{% static 'scss/img-header.jpg' %}">
+		<header> 
+			<div class="horizontal"></div>
+			<nav class = "nav-main">  
+				<ul> 
+					<a @click="show = 'inicio'"><li> Inicio </li></a>
+					<a href=""><li> Consultas </li></a>
+					<a @click="show = 'acerca'"><li> Acerca de </li></a>
+					<a @click="show = 'especialidades'"><li> Especialidades </li></a>
+				</ul>
+			</nav>
+		</header>
+		
+	</section>
+
+	<div class="horizontal"></div>
+
+	<section class = "init-session">
+		<!-- Imagenes pricipales y other shit  -->
+		<p>
+			<div class="inicio" v-show="show == 'inicio'">
+				<p></p>
+			</div>
+			<div class="lorem" v-show="show == 'acerca'"> 
+				<p>Dra. Tatiana Maure<br> 
+				 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu diam leo. In at aliquam orci, eu imperdiet felis. Aenean sodales orci arcu, non blandit purus luctus non. Donec massa risus, aliquam a neque quis, blandit fermentum enim. Curabitur efficitur molestie tellus at pharetra. Nam quis nisi at erat faucibus scelerisque. Praesent pulvinar non augue non elementum.</p>
+			</div>
+			<div class="especialidad" v-show="show == 'especialidades'">
+				<p> Especialidades <br><br> Internista <br><br> Nutricionista <br><br> Estetica</p>
+			</div>
+			<div class="horizontal"></div>
+		</p>
+		<input type="button"  value="Registrarse">
+		<input type="button"  value="Iniciar Sesión">
+
+	</section>
+
+	<div class="horizontal"></div>
+
+	<footer>  
+		<div class="horizontal"></div>
+		<p> 
+			© Made by dafarias & vvalente
+
+		</p>
+
+
+	</footer>
+</div>
+
+<script src="{% static 'vue/vue.min.js' %}"></script>
+<script src="{% static 'vue/script.js' %}"></script>
+
+</body>
+</html>

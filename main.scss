@@ -1,0 +1,182 @@
+
+$button-color:#0062cc;
+
+@mixin font ($size, $weight, $family)
+{
+  font: 
+  {
+    size: $size;
+    weight: $weight;
+    family: $family;
+  }
+}
+
+
+.index 
+{
+  @include font(18px, bold, "Lucida Sans Unicode");
+  color:black;
+  background: white;
+
+  //background: $back-color1; 
+  //background: -webkit-linear-gradient(left, $back-color1, $back-color2);
+  //background: -moz-linear-gradient(left, $back-color1, $back-color2); 
+  //background: -ms-linear-gradient(left, $back-color1, $back-color2); 
+  //background: -o-linear-gradient(left, $back-color1, $back-color2); 
+  //background: linear-gradient(to right, $back-color1, $back-color2);
+  
+  .horizontal
+  {
+    width: 98%;
+    height: 50px;
+    margin-left: 20px;
+    padding-left:0;
+  }
+
+
+  .sect-main
+  {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 0px;
+
+    img
+    {   
+      width: 1000px;
+      max-width: 1000px;
+      min-width: 300px;
+      height: 300px;
+      max-height:350px;
+      min-height: 150; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: none;
+      border-radius: 3%;
+      //border-color: #2dc9ca ;
+    }
+
+    header
+    {
+      max-width: 1000px;
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    .nav-main 
+    {width:1000px;
+      min-width: 300px;
+
+
+      ul
+      {
+        text-align: center;
+        padding-right: 15px;
+        padding-inline-start: 0px;
+
+        li
+          {
+          color:white;
+          width: 200px;
+          height:25px;
+          list-style: none;
+          display: inline-block;
+          background:  $button-color;
+          border-radius: 3%;
+          border-color: $button-color;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          margin-right:15px;
+          margin-left: 15px;
+        
+
+          } 
+
+          li:hover
+          {
+          //background: fade-out($button-color, 0.9);
+          width:205px;
+          border-radius: 5%;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+          
+
+          }   
+      }
+
+    }
+  }
+
+
+  .init-session
+  {
+    display: block;
+    text-align: center;
+
+      input[type="button" i]
+      {
+        @include font(20px, bold, "Lucida Sans Unicode");
+        color:white;
+        background: $button-color;
+        border-color: $button-color;
+        width: 300px;
+        max-width: 330px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 3%;   
+        margin-right: 100px;
+        margin-left: 100px;
+
+      }
+
+
+      input[type="button" i]:hover
+      {
+        width:305px;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 5%; 
+        padding-left: 15px;
+      }
+
+      .lorem
+      {
+        @include font(24px, normal, "Lucida Sans Unicode");
+        display: block;
+        width:800px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+        
+
+      }
+
+      .loremjt
+        {
+          @include font(20px, normal, "Lucida Sans Unicode");
+          text-align: justify;
+          display: block;
+          width:800px;
+          margin-right: auto;
+          margin-left: auto;
+          margin-bottom: 20px;
+          
+        }
+
+  }
+
+
+  footer
+  {
+
+   @include font(12px, normal, "Lucida Sans Unicode");
+    text-align: center;
+    display: block;
+  }
+  
+}
+
+//Hacer el primer div horizontal y luego se prueba con los demás verticales
+// line-height ==> Para acomodar la posicion vertical del texto
